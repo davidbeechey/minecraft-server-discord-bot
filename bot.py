@@ -8,7 +8,7 @@ client = discord.Client()
 def server_status():
 
     # Get details of the mc server
-    response = urllib.request.urlopen(f"https://api.mcsrvstat.us/2/86.136.87.58:25566")
+    response = urllib.request.urlopen(f"https://api.mcsrvstat.us/2/<address>")
     data = json.load(response)
     online = data['debug']['ping']
 
