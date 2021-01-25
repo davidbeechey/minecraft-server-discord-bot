@@ -1,5 +1,5 @@
 # Discord Bot to get Minecraft Server Status
-A discord bot programmed in Python that checks the status of a minecraft server and sends as an embed to a Discord channel with a command.
+A discord bot programmed in Python that checks the status of a Minecraft server and sends as an embed to a Discord channel with a command.
 
 ## Requirements
 * [Discord](https://discordapp.com/) account
