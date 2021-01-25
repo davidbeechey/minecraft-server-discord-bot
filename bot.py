@@ -1,14 +1,20 @@
 import discord
 import urllib.request
 import json
+import os
 from datetime import datetime
+from dotenv import load_dotenv
+load_dotenv()
+
+address = os.getenv('ADDRESS')
+token = os.getenv('TOKEN')
 
 client = discord.Client()
 
 def server_status():
 
     # Get details of the mc server
-    response = urllib.request.urlopen(f"https://api.mcsrvstat.us/2/<address>")
+    response = urllib.request.urlopen(f"https://api.mcsrvstat.us/2/{address}")
     data = json.load(response)
     online = data['debug']['ping']
 
@@ -81,4 +87,4 @@ async def on_message(message):
         # Send the embed to the discord channel
         await message.channel.send(embed=embed)
 
-client.run()
+client.run(token)
