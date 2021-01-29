@@ -35,13 +35,15 @@ To run the bot.py file that gets the status of the server, I decided to run mine
 #### Steps:
 1. Make sure you have nohup and Python installed on your Pi and that the Python dependencies above are installed.
 
-2. Clone repo to Raspberry Pi using
+2. Clone repo to Raspberry Pi using:
 ```
 git clone https://github.com/davidbeechey/minecraft-server-discord-bot.git
 ```
 
-3. Run
+3. Create the `.env` file as detailed above in the same directory as the python file.
+
+4. Run:
 ```
 nohup python3 <path to bot.py file>/bot.py >> <path to bot.py file>/log.txt &
 ```
-4. (optional) To run on boot, add that line to the end of `/etc/profile` using `sudo nano /etc/profile`
+5. (optional) To run on boot, add that line to the end of `/etc/profile` using `sudo nano /etc/profile`
