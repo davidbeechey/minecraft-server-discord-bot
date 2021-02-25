@@ -41,7 +41,7 @@ def server_status():
 @client.event
 async def on_ready():
     print("Bot is ready!")
-    discord.Game(name="the server :)")
+    await client.change_presence(activity=discord.Game(name="the server :)"))
 
 @client.event
 async def on_message(message):
