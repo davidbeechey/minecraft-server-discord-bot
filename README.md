@@ -4,6 +4,8 @@ A discord bot, programmed in Python, that sends the status of a Minecraft server
 * `bot.py` adds the #status command functionality, which gets the status of the minecraft server and sends as an embed to a discord channel.
 * `alerts.py` adds alert functionality, so that when the server starts/stops or a user joins/leaves it sends a message to a discord channel.
 
+I used the [Minecraft Server Status JSON API](https://api.mcsrvstat.us/) to get the server status.
+
 ## Requirements
 * [Discord](https://discordapp.com/) account
 * Python
