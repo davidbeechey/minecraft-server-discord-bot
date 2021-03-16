@@ -81,7 +81,7 @@ async def on_message(message):
         embed.add_field(name="Players", value=f"{online_players}/{max_players}", inline=True)
         embed.add_field(name="Online Players", value=players, inline=True)
         embed.add_field(name="Version", value=version, inline=False)
-        embed.add_field(name="Address", value="86.136.87.58:25566", inline=True)
+        embed.add_field(name="Address", value=address, inline=True)
 
         # Get the time and add as footer
         now = datetime.now()
